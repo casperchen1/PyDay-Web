@@ -3,6 +3,7 @@
     <h1>歡迎來到 PyDay！</h1>
     <p>這是我們的社群頁面，你可以在這裡了解更多內容。</p>
   </div>
+  
 </template>
 
 <script setup>
@@ -16,4 +17,5 @@
   text-align: center;        /* ✅ 文字置中 */
   padding: 1rem;
 }
+
 </style>
