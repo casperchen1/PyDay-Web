@@ -1,5 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import facebookButtom from './components/icons/facebookButtom.vue';
+import instagramButtom from './components/icons/instagramButtom.vue';
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="navbar-left">
       <img class="logo" src="./assets/logo.png" />
     </div>
-    <nav class="navbar-right">
+    <nav class="navbar-right"> 
       <router-link to="/">首頁HOME</router-link>
       |
       <router-link to="/schedule">日程SCHEDULE</router-link>
@@ -18,8 +19,11 @@ import HelloWorld from './components/HelloWorld.vue'
       |
       <router-link to="/album">相簿ALBUM</router-link>
       |
-      <router-link to="/community">社群COMMUNITY</router-link>
     </nav>
+    <div class="navbar-icons">
+      <facebook-buttom />
+      <instagram-buttom />
+    </div>
   </header>
 
   <div class="banner">
@@ -106,10 +110,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 }
 
-
+.navbar-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 /* * {
   outline: 1px solid red;
 }
  偵錯程式*/
-
 </style>
